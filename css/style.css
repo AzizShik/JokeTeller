@@ -7,6 +7,37 @@
 
 body {
 	font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 400;
+	font-size: 16px;
+	font-weight: 400;
+	min-height: 100vh;
+	background-color: #f1f2f3;
+	background-image: url('../img/robot.gif');
+	background-repeat: no-repeat;
+	background-position: center right;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn {
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	padding: 10px 20px;
+	border-radius: 4px;
+	background-color: #222;
+	color: #fff;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 24px;
+}
+
+@media (hover: hover) {
+	.btn:hover {
+		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    outline: 2px solid #f1f2f3;
+	}
+}
+
+.btn:active {
+	transform: translate(1px, 1px) scale(0.98);
 }
