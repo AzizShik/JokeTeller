@@ -16,8 +16,29 @@ body {
 	background-position: center right;
 
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	position: relative;
+}
+
+.joke {
+	opacity: 0;
+	visibility: hidden;
+	max-width: 600px;
+	background-color: #222;
+	color: #fff;
+	padding: 30px 20px;
+	border-radius: 4px;
+	line-height: 150%;
+	font-size: 32px;
+	margin-bottom: 20px;
+	box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.joke--active {
+	opacity: 1;
+	visibility: visible;
 }
 
 .btn {
