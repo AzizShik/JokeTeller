@@ -72,6 +72,4 @@ window.addEventListener('load', () => {
 		loadJoke();
 		clearInterval(timeInterval);
 	});
-
-	loadJoke();
 });
