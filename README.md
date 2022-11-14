@@ -2,6 +2,8 @@
 
 ## Deploy Link:
 
+![image](https://user-images.githubusercontent.com/68865224/201658003-444b46de-207a-4c71-9fe1-bcb32c9ab877.png)
+
 https://azizshik.github.io/JokeTeller/ </br>
 
 ### Description:
@@ -10,7 +12,7 @@ The goal of the project was to create a joke teller with using open API and voic
 
 ### Functionality:
 
-Joke are taken from the open API https://jokeapi.dev/.
+Joke are taken from the open API https://jokeapi.dev/. <br>
 Voice are taken form the open API https://www.voicerss.org/
 
 ### The base project covered:
