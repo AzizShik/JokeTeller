@@ -2,9 +2,9 @@
 
 ## Deploy Link:
 
+https://azizshik.github.io/JokeTeller/ </br>
 ![image](https://user-images.githubusercontent.com/68865224/201658003-444b46de-207a-4c71-9fe1-bcb32c9ab877.png)
 
-https://azizshik.github.io/JokeTeller/ </br>
 
 ### Description:
 
