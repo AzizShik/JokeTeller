@@ -49,24 +49,28 @@ window.addEventListener('load', () => {
 		}
 	}
 
-	btnEl.addEventListener('click', () => {
-		jokeEl.classList.remove('joke-time');
-		loadJoke();
-	});
+	let timeInterval;
 
 	audioElement.addEventListener('play', function () {
 		setTimeout(() => {
 			btnEl.disabled = true;
 			jokeEl.classList.add('joke-time');
 			jokeProgressEl.style.animationDuration = +audioElement.duration + 5 + 's';
-		}, 200);
+		}, 300);
 	});
 
 	audioElement.addEventListener('ended', () => {
 		btnEl.disabled = false;
-		setTimeout(() => {
+		timeInterval = setTimeout(() => {
 			jokeEl.classList.remove('joke-time');
+			loadJoke();
 		}, 5000);
+	});
+
+	btnEl.addEventListener('click', () => {
+		jokeEl.classList.remove('joke-time');
+		loadJoke();
+		clearInterval(timeInterval);
 	});
 
 	loadJoke();
